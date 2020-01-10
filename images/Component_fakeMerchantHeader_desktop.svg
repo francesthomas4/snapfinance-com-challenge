@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="64px" viewBox="0 0 1440 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 60 (101010) - https://sketch.com -->
+    <title>216F2C5C-D4A4-48B0-929D-349501FF3B6A@3.00x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M0,10.6664027 L0,16 L0,21.3332014 L0,26.6667986 L0,32 L4.6668,34.6667986 L9.3332,37.3335973 L14,40 L18.6668,37.3335973 L23.3332,34.6667986 L28,32 L28,26.6667986 L28,21.3332014 L28,16 L23.3332,13.3332014 L18.6668,10.6664027 L14,7.9996041 L9.3332,10.6664027 L9.3332,5.33320137 L0,0 L0,10.6664027 Z M18.6668,16 L18.6668,21.3332014 L18.6668,26.6667986 L18.6668,32 L14,29.3332014 L9.3332,32 L9.3332,26.6667986 L9.3332,21.3332014 L9.3332,16 L14,18.6667986 L18.6668,16 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop-View" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="🏁Merchant-Checkout">
+            <g id="Component/fakeMerchantHeader/desktop">
+                <rect id="box-subtotal" fill="#3C91E6" fill-rule="evenodd" x="0" y="0" width="1440" height="64"></rect>
+                <g id="Component/Cart_Entrypoint" transform="translate(1172.000000, 20.000000)">
+                    <text id="Label" font-family="Helvetica" font-size="14" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="25.5039062" y="20">$ 453.39</tspan>
+                    </text>
+                    <g id="cart-icon" stroke-width="1" fill-rule="evenodd" transform="translate(90.660843, 0.000000)">
+                        <g id="Icons/Nav/Cart" transform="translate(-0.000000, 8.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <g id="Group_3">
+                                <path d="M4.71678133,10.6303 C3.974952,10.6303 3.37562667,11.2037 3.37562667,11.9045 C3.37562667,12.6053 3.974952,13.1787 4.71678133,13.1787 C5.4576,13.1787 6.064,12.6053 6.064,11.9045 C6.064,11.2037 5.4576,10.6303 4.71678133,10.6303 Z M1.31790933,0.4365 C0.962154667,0.4365 0.674114667,0.7218 0.674114667,1.0736 C0.674114667,1.4255 0.962154667,1.7107 1.31790933,1.7107 L1.80808267,1.7107 C1.93845867,1.7107 2.05771733,1.7839 2.116336,1.8997 L4.44693333,6.5464 L3.53733333,8.1073 C3.429192,8.2857 3.368552,8.496 3.368552,8.719 C3.368552,9.4198 3.974952,9.9932 4.71678133,9.9932 L12.15832,9.9932 C12.513064,9.9932 12.8021147,9.7079 12.8021147,9.3561 C12.8021147,9.0042 12.513064,8.719 12.15832,8.719 L4.999768,8.719 C4.90476533,8.719 4.83098667,8.6489 4.83098667,8.5597 L4.8512,8.4832 L5.4576,7.4447 L10.4775813,7.4447 C10.9829147,7.4447 11.427608,7.1835 11.6560187,6.7885 L14.06848,2.6537 C14.1220453,2.5645 14.1493333,2.4562 14.1493333,2.3479 C14.1493333,1.9974 13.8461333,1.7107 13.4752187,1.7107 L3.51004533,1.7107 L3.10982133,0.9045 C2.96731733,0.618 2.67220267,0.4365 2.3498,0.4365 L1.31790933,0.4365 Z M11.4538853,10.6303 C10.7130667,10.6303 10.1137413,11.2037 10.1137413,11.9045 C10.1137413,12.6053 10.7130667,13.1787 11.4538853,13.1787 C12.1957147,13.1787 12.8021147,12.6053 12.8021147,11.9045 C12.8021147,11.2037 12.1957147,10.6303 11.4538853,10.6303 Z" id="Vector"></path>
+                            </g>
+                        </g>
+                        <g id="Number_Badge" transform="translate(13.138667, 0.000000)">
+                            <ellipse id="Ellipse" stroke="#FFFFFF" fill="#FF647C" fill-rule="nonzero" cx="7.07466667" cy="7" rx="7.07466667" ry="7"></ellipse>
+                            <text id="3" font-family="HelveticaNeue, Helvetica Neue" font-size="11" font-weight="normal" letter-spacing="0.183333386" fill="#FFFFFF">
+                                <tspan x="4.05082397" y="11">3</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="logos/fakeMerchant/desktop" transform="translate(150.000000, 12.000000)" fill-rule="evenodd" stroke-width="1">
+                    <g id="Group">
+                        <text id="Mattress-Co." font-family="OpenSans-Bold, Open Sans" font-size="20" font-weight="bold" letter-spacing="-0.48" fill="#FEFBFB">
+                            <tspan x="44" y="28">Mattress Co.</tspan>
+                        </text>
+                        <g id="Base/Logos/Brading---Icon">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Icon" fill="#3C91E6" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <g id="Base/Fill/Primary" mask="url(#mask-2)" fill="#F5F5F5" fill-rule="evenodd">
+                                <polygon id="Container" points="0 0 28 0 28 40 0 40"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
