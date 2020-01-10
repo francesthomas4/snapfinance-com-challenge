@@ -14,6 +14,6 @@ What Snap! is looking for:
 1. A correct solution to the mockup implementation (meets requirements listed above). - Note: This does not need to be written for any platforms other than desktop at the given size. 
 2. Organization of the implementation. 
 3. Easy to read and be understood by another developer. 
-4. **When you have completed the challenge, simply commit your changes to the repository (master branch) and send an update via email to: bbarber@snapfinance.com **
+4. **When you have completed the challenge, simply commit & push your changes to the repository (master branch) and send an update via email to: bbarber@snapfinance.com **
 
 
