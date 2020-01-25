@@ -1,108 +1,143 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopping Cart</title>
 
-<head>
-    <title>Snap! Finance Checkout</title>
-    <script src="shoppingcart.js"></script>
-     <link rel="stylesheet" href="styles.css">
-
-</head>
-
-<body>
-    <h1>Snap!</h1>
-   
+    <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+    <meta name="robots" content="noindex,follow" />
+  </head>
+  <body>
     <div class="shopping-cart">
-  <!-- Title -->
-  <div class="title">
-    Shopping Bag
-  </div>
- 
-  <!-- Product #1 -->
-  <div class="item">
-    <div class="buttons">
-      <span class="delete-btn"></span>
-      <span class="like-btn"></span>
-    </div>
- 
-    <div class="image">
-        <img src="snapfinance-com-challenge/images/Mattress1.png"/>
-    </div>
- 
-    <div class="description">
-      <span>Super Firm Double</span>
-        <span>Dark Gray</span>
-    </div>
- 
-    <div class="quantity">
-      <button class="plus-btn" type="button" name="button">
-        <img src="plus.svg" alt="" />
-      </button>
-      <input type="text" name="name" value="1">
-      <button class="minus-btn" type="button" name="button">
-        <img src="minus.svg" alt="" />
-      </button>
-    </div>
- 
-    <div class="total-price">$200</div>
-  </div>
- 
-  <!-- Product #2 -->
-  <div class="item">
-    <div class="buttons">
-      <span class="delete-btn"></span>
-      <span class="like-btn"></span>
-    </div>
- 
-    <div class="image">
-      <img src="Cart_Item Copy.png" alt=""/>
-    </div>
- 
-    <div class="description">
-      <span>Medium Firm Single</span>
-      <span>Dark Gray</span>
-    </div>
- 
-    <div class="quantity">
-      <button class="plus-btn" type="button" name="button">
-        <img src="plus.svg" alt="" />
-      </button>
-      <input type="text" name="name" value="1">
-      <button class="minus-btn" type="button" name="button">
-        <img src="minus.svg" alt="" />
-      </button>
-    </div>
- 
-    <div class="total-price">$150</div>
-  </div>
- 
-  <!-- Product #3 -->
-  <div class="item">
-    <div class="buttons">
-      <span class="delete-btn"></span>
-      <span class="like-btn"></span>
-    </div>
- 
-    <div class="image">
-      <img src="Cart_Item Copy 2.png" alt="" />
-    </div>
- 
-    <div class="description">
-      <span>Warmth Coforter</span>
-      <span>Blue Check</span>
-    </div>
- 
-    <div class="quantity">
-      <button class="plus-btn" type="button" name="button">
-        <img src="plus.svg" alt="" />
-      </button>
-      <input type="text" name="name" value="1">
-      <button class="minus-btn" type="button" name="button">
-        <img src="minus.svg" alt="" />
-      </button>
-    </div>
- 
-    <div class="total-price">$40</div>
-  </div>
-</div>
-</body>
+      <!-- Title -->
+      <div class="title">
+        Shopping Bag
+      </div>
 
+      <!-- Product #1 -->
+      <div class="item">
+        <div class="buttons">
+          <span class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="snapfinance-com-challenge/images/Mattress1.png"/>
+      </div>
+   
+      <div class="description">
+        <span>Super Firm Double</span>
+          <span>Dark Gray</span>
+      </div>
+
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">$200</div>
+      </div>
+
+      <!-- Product #2 -->
+      <div class="item">
+        <div class="buttons">
+          <span class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="Cart_Item Copy.png" alt=""/>
+        </div>
+     
+        <div class="description">
+          <span>Medium Firm Single</span>
+          <span>Dark Gray</span>
+        </div>
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">$150</div>
+      </div>
+
+      <!-- Product #3 -->
+      <div class="item">
+        <div class="buttons">
+          <span class="delete-btn"></span>
+          <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+          <img src="Cart_Item Copy 2.png" alt="" />
+        </div>
+     
+        <div class="description">
+          <span>Warmth Coforter</span>
+          <span>Blue Check</span>
+        </div>
+
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="minus.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="total-price">$40</div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $('.minus-btn').on('click', function(e) {
+    		e.preventDefault();
+    		var $this = $(this);
+    		var $input = $this.closest('div').find('input');
+    		var value = parseInt($input.val());
+
+    		if (value > 1) {
+    			value = value - 1;
+    		} else {
+    			value = 0;
+    		}
+
+        $input.val(value);
+
+    	});
+
+    	$('.plus-btn').on('click', function(e) {
+    		e.preventDefault();
+    		var $this = $(this);
+    		var $input = $this.closest('div').find('input');
+    		var value = parseInt($input.val());
+
+    		if (value < 100) {
+      		value = value + 1;
+    		} else {
+    			value =100;
+    		}
+
+    		$input.val(value);
+    	});
+
+      $('.like-btn').on('click', function() {
+        $(this).toggleClass('is-active');
+      });
+    </script>
+  </body>
 </html>
