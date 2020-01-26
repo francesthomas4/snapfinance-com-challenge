@@ -1,5 +1,4 @@
-  <script type="text/javascript">
-   
+
       $('.button-minus').on('click', function(e) {
     		e.preventDefault();
     		var $this = $(this);
@@ -93,4 +92,4 @@ function updateQuantity(quantityInput)
   });  
 }
  
-    </script>
+
