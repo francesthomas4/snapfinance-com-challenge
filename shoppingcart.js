@@ -1,4 +1,4 @@
-    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8">
+
 
       $('.button-minus').on('click', function(e) {
     		e.preventDefault();
