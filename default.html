@@ -25,8 +25,6 @@
       <!-- Product #1 -->
       <div class="item">
         <div class="buttons">
-          <span class="delete-btn"></span>
-          <span class="like-btn"></span>
         </div>
         
          <div class="image">
@@ -37,16 +35,12 @@
         <span>Super Firm Double</span>
           <span>Dark Gray</span>
       </div>
-
-        <div class="quantity">
-          <button class="plus-btn" type="button" name="button">
-            <img src="plus.svg" alt="" />
-          </button>
-          <input type="text" name="name" value="1">
-          <button class="minus-btn" type="button" name="button">
-            <img src="minus.svg" alt="" />
-          </button>
-        </div>
+        
+        <div class="input-group">
+  <input type="button" value="-" class="button-minus" data-field="quantity">
+  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+  <input type="button" value="+" class="button-plus" data-field="quantity">
+</div>
 
         <div class="total-price">$200</div>
       </div>
@@ -112,6 +106,42 @@
     <div class="image">
           <img src="images/CTA@2x.png" alt="" />
         </div>
+    
+  function incrementValue(e) {
+  e.preventDefault();
+  var fieldName = $(e.target).data('field');
+  var parent = $(e.target).closest('div');
+  var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+  if (!isNaN(currentVal)) {
+    parent.find('input[name=' + fieldName + ']').val(currentVal + 1);
+  } else {
+    parent.find('input[name=' + fieldName + ']').val(0);
+  }
+}
+
+function decrementValue(e) {
+  e.preventDefault();
+  var fieldName = $(e.target).data('field');
+  var parent = $(e.target).closest('div');
+  var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+  if (!isNaN(currentVal) && currentVal > 0) {
+    parent.find('input[name=' + fieldName + ']').val(currentVal - 1);
+  } else {
+    parent.find('input[name=' + fieldName + ']').val(0);
+  }
+}
+
+$('.input-group').on('click', '.button-plus', function(e) {
+  incrementValue(e);
+});
+
+$('.input-group').on('click', '.button-minus', function(e) {
+  decrementValue(e);
+});
+
+    
     
     <script type="text/javascript">
       $('.minus-btn').on('click', function(e) {
