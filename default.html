@@ -75,7 +75,7 @@
       <input type="number" value="2" min="1">
     </div>
 
-        <div class="tproduct-line-price">150</div>
+        <div class="product-line-price">150</div>
       </div>
 
       <!-- Product #3 -->
@@ -131,39 +131,6 @@
     </div>
 
   <script type="text/javascript">
-
-
-  
-      $('.button-minus').on('click', function(e) {
-    		e.preventDefault();
-    		var $this = $(this);
-    		var $input = $this.closest('div').find('input');
-    		var value = parseInt($input.val());
-
-    		if (value > 1) {
-    			value = value - 1;
-    		} else {
-    			value = 0;
-    		}
-
-        $input.val(value);
-
-    	});
-
-    	$('.button-plus').on('click', function(e) {
-    		e.preventDefault();
-    		var $this = $(this);
-    		var $input = $this.closest('div').find('input');
-    		var value = parseInt($input.val());
-
-    		if (value < 100) {
-      		value = value + 1;
-    		} else {
-    			value =2;
-    		}
-
-    		$input.val(value);
-    	});
       
 /* Set rates + misc */
 var taxRate = 0.05;
@@ -174,10 +141,6 @@ var fadeTime = 300;
 /* Assign actions */
 $('.product-quantity input').change( function() {
   updateQuantity(this);
-});
-
-$('.product-removal button').click( function() {
-  removeItem(this);
 });
 
 
