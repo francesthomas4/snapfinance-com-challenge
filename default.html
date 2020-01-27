@@ -183,7 +183,7 @@ function recalculateCart()
   
   /* Sum up row totals */
   $('.item').each(function () {
-    subtotal += parseFloat($(this).children('.product-line-price').text());
+    subtotal += parseFloat($(this).children('.total-price').text());
   });
   
   /* Calculate totals */
