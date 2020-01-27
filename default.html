@@ -104,19 +104,19 @@
  <div class="totals">
     <div class="totals-item">
       <label>Subtotal</label>
-      <div class="totals-value" id="cart-subtotal">71.97</div>
+      <div class="totals-value" id="cart-subtotal">390.00</div>
     </div>
     <div class="totals-item">
-      <label>Tax (5%)</label>
-      <div class="totals-value" id="cart-tax">3.60</div>
+      <label>Tax (3.5%)</label>
+      <div class="totals-value" id="cart-tax">13.65</div>
     </div>
     <div class="totals-item">
       <label>Shipping</label>
-      <div class="totals-value" id="cart-shipping">15.00</div>
+      <div class="totals-value" id="cart-shipping">50.00</div>
     </div>
     <div class="totals-item totals-item-total">
       <label>Grand Total</label>
-      <div class="totals-value" id="cart-total">90.57</div>
+      <div class="totals-value" id="cart-total">453.65</div>
     </div>
   </div>
 
@@ -128,8 +128,8 @@
   <script type="text/javascript">
       
 /* Set rates + misc */
-var taxRate = 0.05;
-var shippingRate = 15.00; 
+var taxRate = 0.035;
+var shippingRate = 50.00; 
 var fadeTime = 300;
 
 
@@ -175,7 +175,7 @@ function updateQuantity(quantityInput)
 {
   /* Calculate line price */
   var productRow = $(quantityInput).parent().parent();
-  var price = parseFloat(productRow.children('.product-price').text());
+  var price = parseFloat(productRow.children('.product-line-price').text());
   var quantity = $(quantityInput).val();
   var linePrice = price * quantity;
   
