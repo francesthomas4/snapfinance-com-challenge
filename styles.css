@@ -274,8 +274,6 @@ input[type="number"] {
     }
   }
   
-  .product-quantity:before {
-    content: 'x';
-  }
+
 
 
