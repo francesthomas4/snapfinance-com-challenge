@@ -267,5 +267,15 @@ input[type="number"] {
   content: '$';
 }
 
+  .product-quantity {
+    width: 100px;
+    input {
+      margin-left: 20px;
+    }
+  }
+  
+  .product-quantity:before {
+    content: 'x';
+  }
 
 
