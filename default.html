@@ -45,12 +45,17 @@
           <span>Dark Gray</span>
       </div>
        
-        <div class="input-group">
-            <input type="number" value="2" min="1">
-        </div>
+     .product-quantity {
+    input {
+      width: 40px;
+      
+    }
+        <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
        
 
-        <div class="total-price">$200</div>
+        <div class="product-line-price">200</div>
       </div>
 
       <!-- Product #2 -->
@@ -67,7 +72,7 @@
           <span>Dark Gray</span>
         </div>
         <div class="input-group">
-          <input type="button" value="-" class="button-minus" label="-">
+          <input type="button" value="-" class="button-minus" data-field="quantity">
           <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
           <input type="button" value="+" class="button-plus" data-field="quantity">
         </div>
@@ -166,13 +171,17 @@
       
 /* Set rates + misc */
 var taxRate = 0.05;
-var shippingRate = 50.00; 
+var shippingRate = 15.00; 
 var fadeTime = 300;
 
 
 /* Assign actions */
-$('.input-group input').change( function() {
+$('.product-quantity input').change( function() {
   updateQuantity(this);
+});
+
+$('.product-removal button').click( function() {
+  removeItem(this);
 });
 
 
@@ -182,8 +191,8 @@ function recalculateCart()
   var subtotal = 0;
   
   /* Sum up row totals */
-  $('.item').each(function () {
-    subtotal += parseFloat($(this).children('.total-price').text());
+  $('.product').each(function () {
+    subtotal += parseFloat($(this).children('.product-line-price').text());
   });
   
   /* Calculate totals */
@@ -217,13 +226,25 @@ function updateQuantity(quantityInput)
   var linePrice = price * quantity;
   
   /* Update line price display and recalc cart totals */
-  productRow.children('.total-price').each(function () {
+  productRow.children('.product-line-price').each(function () {
     $(this).fadeOut(fadeTime, function() {
       $(this).text(linePrice.toFixed(2));
       recalculateCart();
       $(this).fadeIn(fadeTime);
     });
   });  
+}
+
+
+/* Remove item from cart */
+function removeItem(removeButton)
+{
+  /* Remove row from DOM and recalc cart total */
+  var productRow = $(removeButton).parent().parent();
+  productRow.slideUp(fadeTime, function() {
+    productRow.remove();
+    recalculateCart();
+  });
 }
  
 </script>
