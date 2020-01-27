@@ -262,7 +262,10 @@ input[type="number"] {
     border-bottom: 1px solid $color-border;
   }
   
-  
+  /* Apply dollar signs */
+.product .product-price:before, .product .product-line-price:before, .totals-value:before {
+  content: '$';
+}
 
 
 
