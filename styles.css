@@ -46,31 +46,25 @@ body {
 
 
 /* Totals section */
-.totals {
   .totals-item {
     float: right;
     clear: both;
     width: 100%;
     margin-bottom: 10px;
+}
     
-    label {
-      float: left;
-      clear: both;
-      width: 79%;
-      text-align: right;
-    }
     
     .totals-value {
       float: right;
       width: 21%;
       text-align: right;
     }
-  }
+ 
   
   .totals-item-total {
     font-family: $font-bold;
   }
-}
+
 
 
 .item {
