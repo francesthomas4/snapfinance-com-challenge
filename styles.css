@@ -112,12 +112,7 @@ button[class*=btn] {
   border: none;
   cursor: pointer;
 }
-.minus-btn img {
-  margin-bottom: 3px;
-}
-.plus-btn img {
-  margin-top: 2px;
-}
+
 button:focus,
 input:focus {
   outline:0;
@@ -207,7 +202,7 @@ input:focus {
   
 
 /* Totals section */
-.totals {
+
   .totals-item {
     float: right;
     clear: both;
@@ -231,7 +226,7 @@ input:focus {
   .totals-item-total {
     font-family: $font-bold;
   }
-}
+
 
 .checkout {
   float: right;
