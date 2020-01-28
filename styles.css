@@ -128,33 +128,6 @@ input:focus {
   font-weight: 300;
 }
 
-/* Responsive */
-@media (max-width: 800px) {
-  .shopping-cart {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
-  .item {
-    height: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .image img {
-    width: 50%;
-  }
-  .image,
-  .quantity,
-  .description {
-    width: 100%;
-    text-align: center;
-    margin: 6px 0;
-  }
-  .buttons {
-    margin-right: 20px;
-  }
-
-
 /* Global "table" column settings */
 .product-image { float: left; width: 20%; }
 .product-details { float: left; width: 37%; }
