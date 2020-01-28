@@ -168,9 +168,6 @@ input:focus {
 
 
 
-}
-
-
 /* Apply dollar signs */
 .product-line-price:before, .totals-value:before {
   content: '$';
@@ -191,7 +188,13 @@ input:focus {
       width: 100px;
     }
   
-
+ .product-line-price {
+    float: right;
+    clear: left;
+    width: auto;
+    margin-top: 10px;
+  }
+  
   
   .product-quantity {
     input {
