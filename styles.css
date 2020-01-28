@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
-
+@import "compass/css3";
 * {
   box-sizing: border-box;
 }
@@ -153,9 +153,6 @@ input:focus {
   .buttons {
     margin-right: 20px;
   }
-}
-@import "compass/css3";
-
 
 
 /* Global "table" column settings */
@@ -188,6 +185,11 @@ input:focus {
       width: 100px;
     }
   
+   .product-price {
+    clear: both;
+    width: 70px;
+  }
+    
  .product-line-price {
     float: right;
     clear: left;
