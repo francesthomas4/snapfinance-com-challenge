@@ -190,12 +190,6 @@ function updateQuantity(quantityInput)
   });  
 }
 
-  /* Remove row from DOM and recalc cart total */
-  var productRow = $(removeButton).parent().parent();
-  productRow.slideUp(fadeTime, function() {
-    productRow.remove();
-    recalculateCart();
-  });
 
  
 </script>
