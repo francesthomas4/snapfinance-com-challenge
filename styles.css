@@ -14,7 +14,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
 .shopping-cart {
   width: 750px;
   height: 723px;
@@ -27,6 +26,13 @@ body {
   flex-direction: column;
 }
 
+/* Column headers */
+.column-labels {
+  label {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid $color-border;
+  }
 
 .title {
   height: 60px;
