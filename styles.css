@@ -62,30 +62,33 @@ body {
   border-bottom:  1px solid #E1E8EE;
 }
 
+
 /* Totals section */
+.totals {
   .totals-item {
     float: right;
     clear: both;
     width: 100%;
     margin-bottom: 10px;
-} 
-    .totals-value {
-      float: right;
-      width: 21%;
-      text-align: right;
-    }
-
-  .totals-item-total {
-    font-family: $font-bold;
-  }
- totals.label {
+    
+    label {
       float: left;
       clear: both;
       width: 79%;
       text-align: right;
     }
     
-
+    .totals-value {
+      float: right;
+      width: 21%;
+      text-align: right;
+    }
+  }
+  
+  .totals-item-total {
+    font-family: $font-bold;
+  }
+}
 
 .item {
   padding: 20px 30px;
