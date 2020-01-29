@@ -68,20 +68,23 @@ body {
     clear: both;
     width: 100%;
     margin-bottom: 10px;
-}
-    
-    
+} 
     .totals-value {
       float: right;
       width: 21%;
       text-align: right;
     }
- 
-  
+
   .totals-item-total {
     font-family: $font-bold;
   }
-
+ .totals.label {
+      float: left;
+      clear: both;
+      width: 79%;
+      text-align: right;
+    }
+    
 
 
 .item {
