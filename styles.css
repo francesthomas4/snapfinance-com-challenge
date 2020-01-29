@@ -78,7 +78,7 @@ body {
   .totals-item-total {
     font-family: $font-bold;
   }
- .totals.label {
+ totals.label {
       float: left;
       clear: both;
       width: 79%;
