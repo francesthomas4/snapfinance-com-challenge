@@ -87,19 +87,6 @@ body {
   border-bottom:  1px solid #E1E8EE;
 }
 
-.is-active {
-  animation-name: animate;
-  animation-duration: .8s;
-  animation-iteration-count: 1;
-  animation-timing-function: steps(28);
-  animation-fill-mode: forwards;
-}
-
-@keyframes animate {
-  0%   { background-position: left;  }
-  50%  { background-position: right; }
-  100% { background-position: right; }
-}
 
 /* Product Image */
 .image {
