@@ -107,20 +107,7 @@ body {
   margin-top: 8px;
   color: #86939E;
 }
-/* Product Quantity */
-.product-quantity {
-  padding-top: 20px;
-  margin-right: 60px;
-}
-.product-quantity input {
-  -webkit-appearance: none;
-  border: none;
-  text-align: center;
-  width: 32px;
-  font-size: 16px;
-  color: #43484D;
-  font-weight: 300;
-}
+
 
 button[class*=btn] {
   width: 30px;
