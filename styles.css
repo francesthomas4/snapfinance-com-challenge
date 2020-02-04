@@ -138,16 +138,6 @@ input:focus {
 .product-price:before, .product-line-price:before, .totals-value:before {
   content: '$';
 }
-
-
-
-
-/* Product entries */
-.product {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid $color-border;
-}
  
    .product-price {
     clear: both;
