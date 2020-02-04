@@ -108,11 +108,11 @@ body {
   color: #86939E;
 }
 /* Product Quantity */
-.quantity {
+.product-quantity {
   padding-top: 20px;
   margin-right: 60px;
 }
-.quantity input {
+.product-quantity input {
   -webkit-appearance: none;
   border: none;
   text-align: center;
