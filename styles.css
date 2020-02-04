@@ -102,33 +102,29 @@ body {
 .image {
   margin-right: 25px;
 }
+/* Description*/
 
-/* Product Description */
 .description {
   padding-top: 10px;
- 
+  margin-right: 60px;
   width: 115px;
 }
-
+ 
 .description span {
-      float: left;
-      clear: both;
-      width: 29%;
-      text-align: right;
-    }
-  margin-right: 60px;
   display: block;
   font-size: 14px;
   color: #43484D;
   font-weight: 400;
 }
-
+ 
+.description span:first-child {
+  margin-bottom: 5px;
+}
 .description span:last-child {
   font-weight: 300;
   margin-top: 8px;
   color: #86939E;
 }
-
 /* Product Quantity */
 .quantity {
   padding-top: 20px;
