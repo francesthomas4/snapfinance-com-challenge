@@ -157,9 +157,10 @@ input:focus {
 
 /* Total Price */
 .product-line-price {
-  float: right;
-  width: 21%;
-  text-align: right;
+    float: right;
+    clear: both;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 
