@@ -148,7 +148,7 @@ input:focus {
 
 
 /* Apply dollar signs */
-.product-line-price:before, .totals-value:before {
+.product-price:before, .product-line-price:before, .totals-value:before {
   content: '$';
 }
 
