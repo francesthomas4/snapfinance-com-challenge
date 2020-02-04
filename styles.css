@@ -106,11 +106,16 @@ body {
 /* Product Description */
 .description {
   padding-top: 10px;
-  
+ 
   width: 115px;
 }
 
 .description span {
+      float: left;
+      clear: both;
+      width: 29%;
+      text-align: right;
+    }
   margin-right: 60px;
   display: block;
   font-size: 14px;
