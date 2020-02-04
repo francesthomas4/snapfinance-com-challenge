@@ -179,12 +179,6 @@ input:focus {
     width: 70px;
   }
     
- .product-line-price {
-    float: right;
-    clear: left;
-    width: auto;
-    margin-top: 10px;
-  }
   
   
   .product-quantity {
